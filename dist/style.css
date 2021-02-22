@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  width: 100%;
+}
+
+section .right {
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+section .right .cover {
+  width: 80%;
+  margin: auto;
+}
+
+section .right .cover .logo {
+  width: 160px;
+  padding: 65px 0 140px 0;
+}
+
+section .right .cover h1 {
+  font-size: 55px;
+  color: #f96262;
+  letter-spacing: 28px;
+  font-weight: 300;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+section .right .cover h1 span {
+  font-weight: 400;
+  color: #413a3a;
+}
+
+section .right .cover p {
+  color: #ce9797;
+  font-weight: bold;
+  padding: 0px 100px 50px 0;
+}
+
+section .left {
+  background-image: url(../images/hero-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.form-cover {
+  padding-bottom: 80px;
+}
+
+.form-cover form {
+  width: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-cover form input#email {
+  padding: 16px 210px 16px 30px;
+  outline: none;
+  border-radius: 40px;
+}
+
+.form-cover form input#email::-webkit-input-placeholder {
+  letter-spacing: 1.1px;
+  color: #e5cccf;
+}
+
+.form-cover form input#email:-ms-input-placeholder {
+  letter-spacing: 1.1px;
+  color: #e5cccf;
+}
+
+.form-cover form input#email::-ms-input-placeholder {
+  letter-spacing: 1.1px;
+  color: #e5cccf;
+}
+
+.form-cover form input#email::placeholder {
+  letter-spacing: 1.1px;
+  color: #e5cccf;
+}
+
+.form-cover form button#validate {
+  color: transparent;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  margin-left: -65px;
+  padding: 17px 46px;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+}
+
+.form-cover form button#validate:hover {
+  background: linear-gradient(135deg, #ffd1d1, #e59999);
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(224, 155, 155, 0.5);
+          box-shadow: 0px 0px 15px 2px rgba(224, 155, 155, 0.5);
+}
+
+.form-cover p#result {
+  padding-left: 26px;
+  padding-top: 4px;
+}
+
+.attribution {
+  font-size: 11px;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row {
+    width: 100%;
+    margin-left: 0;
+  }
+  section {
+    width: 100%;
+  }
+  section .right {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section .right .cover {
+    width: 100%;
+    margin: auto;
+  }
+  section .right .cover .logo {
+    width: 140px;
+    padding: 50px 0 50px 0;
+    margin-left: 50px;
+  }
+  section .right .cover .img-top {
+    width: 100%;
+  }
+  section .right .cover h1 {
+    margin: 40px auto;
+    font-size: 50px;
+    letter-spacing: 20px;
+    text-align: center;
+  }
+  section .right .cover p {
+    font-size: 16px;
+    color: #ce9797;
+    font-weight: bold;
+    padding: 0 100px 50px;
+    text-align: center;
+  }
+  section .right .cover .form-cover {
+    width: 472px;
+    margin: auto;
+  }
+  section .right .cover .attribution {
+    text-align: center;
+  }
+}
+
+@media (max-width: 544px) {
+  section .right .cover .logo {
+    padding: 25px 0;
+  }
+  section .right .cover .img-top {
+    width: 100%;
+  }
+  section .right .cover h1 {
+    margin: 30px auto;
+    font-size: 40px;
+    letter-spacing: 18px;
+  }
+  section .right .cover p {
+    padding: 0px 16px 50px;
+    font-size: 14px;
+  }
+  section .right .cover .form-cover {
+    width: 325px;
+    margin: auto;
+  }
+  section .right .cover .form-cover form {
+    width: 100%;
+  }
+  section .right .cover .form-cover form input#email {
+    padding: 16px 100px 16px 30px;
+  }
+  section .right .cover .form-cover form button#validate {
+    padding: 17px 27px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

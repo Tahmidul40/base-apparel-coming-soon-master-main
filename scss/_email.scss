@@ -1,0 +1,42 @@
+.form-cover {
+  padding-bottom: 80px;
+  form {
+    width: 510px;
+    display: flex;
+
+    input#email {
+      padding: 16px 210px 16px 30px;
+      outline: none;
+      border-radius: 40px;
+
+      &::placeholder {
+        letter-spacing: 1.1px;
+        color: #e5cccf;
+      }
+    }
+
+    button#validate {
+      color: transparent;
+      background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+      margin-left: -65px;
+      padding: 17px 46px;
+      outline: none;
+      border: none;
+      border-radius: 40px;
+
+      &:hover {
+        background: linear-gradient(
+          135deg,
+          hsl(0, 100%, 91%),
+          rgb(229, 153, 153)
+        );
+        box-shadow: 0px 0px 15px 2px rgba(224, 155, 155, 0.5);
+      }
+    }
+  }
+
+  p#result {
+    padding-left: 26px;
+    padding-top: 4px;
+  }
+}

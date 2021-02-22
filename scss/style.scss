@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+// font-family: 'Josefin Sans', sans-serif;
+
+// variables
+$Desaturated-Red: hsl(0, 36%, 70%);
+$Soft-Red: hsl(0, 93%, 68%);
+$Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  width: 100%;
+
+  .right {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    .cover {
+      // width: 445px;
+      width: 80%;
+      margin: auto;
+
+      .logo {
+        width: 160px;
+        padding: 65px 0 140px 0;
+      }
+
+      h1 {
+        //width: 70%;
+        font-size: 55px;
+        color: $Soft-Red;
+        letter-spacing: 28px;
+        font-weight: 300;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        span {
+          font-weight: 400;
+          color: $Dark-Grayish-Red;
+        }
+      }
+
+      p {
+        color: $Desaturated-Red;
+        font-weight: bold;
+        padding: 0px 100px 50px 0;
+      }
+    }
+  }
+
+  .left {
+    background-image: url(../images/hero-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@import "email";
+
+.attribution {
+  font-size: 11px;
+  a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .row {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  section {
+    width: 100%;
+
+    .right {
+      padding-left: 0;
+      padding-right: 0;
+      .cover {
+        // width: 445px;
+        width: 100%;
+        margin: auto;
+
+        .logo {
+          width: 140px;
+          padding: 50px 0 50px 0;
+          margin-left: 50px;
+        }
+
+        .img-top {
+          width: 100%;
+        }
+
+        h1 {
+          margin: 40px auto;
+          font-size: 50px;
+          letter-spacing: 20px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 16px;
+          color: $Desaturated-Red;
+          font-weight: bold;
+          padding: 0 100px 50px;
+          text-align: center;
+        }
+
+        .form-cover {
+          width: 472px;
+          margin: auto;
+        }
+
+        .attribution {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 544px) {
+  section {
+    .right {
+      .cover {
+        .logo {
+          padding: 25px 0;
+        }
+
+        .img-top {
+          width: 100%;
+        }
+
+        h1 {
+          margin: 30px auto;
+          font-size: 40px;
+          letter-spacing: 18px;
+        }
+
+        p {
+          padding: 0px 16px 50px;
+          font-size: 14px;
+        }
+
+        .form-cover {
+          width: 325px;
+          margin: auto;
+
+          form {
+            width: 100%;
+
+            input#email {
+              padding: 16px 100px 16px 30px;
+            }
+
+            button#validate {
+              padding: 17px 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
